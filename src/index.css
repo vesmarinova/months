@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-winter: #dbeafe;
+  --color-winter-dark: #1e40af;
+  --color-winter-border: #93c5fd;
+  --color-spring: #dcfce7;
+  --color-spring-dark: #166534;
+  --color-spring-border: #86efac;
+  --color-summer: #fef9c3;
+  --color-summer-dark: #a16207;
+  --color-summer-border: #fde047;
+  --color-fall: #ffedd5;
+  --color-fall-dark: #9a3412;
+  --color-fall-border: #fdba74;
+}
+
+html, body {
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #f0f9ff 0%, #fdf2f8 50%, #fefce8 100%);
+  min-height: 100svh;
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+@keyframes bounce-in {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.animate-confetti {
+  animation: confetti-fall 3s ease-in-out forwards;
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.5s ease-out forwards;
+}
+
+.animate-shake {
+  animation: shake 0.3s ease-in-out;
+}
