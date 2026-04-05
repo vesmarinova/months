@@ -21,7 +21,7 @@ const GAME_MODES = [
     subtitle: 'Сортирайте по сезони',
     description: 'Match months to their seasons',
     color: 'bg-emerald-500 hover:bg-emerald-600',
-    disabled: true,
+    disabled: false,
   },
   {
     mode: 'quiz' as const,
@@ -30,7 +30,7 @@ const GAME_MODES = [
     subtitle: 'Бърз тест',
     description: 'Test your knowledge',
     color: 'bg-amber-500 hover:bg-amber-600',
-    disabled: true,
+    disabled: false,
   },
 ] as const;
 

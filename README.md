@@ -24,9 +24,9 @@ npm run deploy   # Deploy to GitHub Pages
 
 ## Game Modes
 
-- **Month Sequence** (✅ Implemented): Drag-and-drop months into the correct order (January → December)
-- **Season Sorting** (🔜 Coming Soon): Match months to their seasons
-- **Quick Quiz** (🔜 Coming Soon): Multiple choice knowledge test
+- **Month Sequence** (✅): Drag-and-drop months into the correct order (January → December)
+- **Season Sorting** (✅): Drag months to their correct season — progressive difficulty (4 → 8 → 12 months)
+- **Quick Quiz** (✅): Multiple choice questions — "What comes after?", "Which season?", and more
 
 ## Features
 

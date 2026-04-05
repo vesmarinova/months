@@ -2,6 +2,8 @@ import { useState, useCallback } from 'react';
 import { Header } from './components/layout/Header';
 import { MainMenu } from './components/game/MainMenu';
 import { MonthSequence } from './components/game/MonthSequence';
+import { SeasonSort } from './components/game/SeasonSort';
+import { QuickQuiz } from './components/game/QuickQuiz';
 import type { GameMode } from './types';
 
 export default function App() {
@@ -15,6 +17,8 @@ export default function App() {
 
       {mode === 'menu' && <MainMenu onSelectMode={setMode} />}
       {mode === 'sequence' && <MonthSequence onBack={handleBack} />}
+      {mode === 'seasons' && <SeasonSort onBack={handleBack} />}
+      {mode === 'quiz' && <QuickQuiz onBack={handleBack} />}
     </main>
   );
 }
